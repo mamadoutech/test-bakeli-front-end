@@ -1,0 +1,67 @@
+.nav-container {
+  margin: 0 auto;
+
+  margin-top: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+}
+
+.navigation {
+  width: 73rem;
+  display: flex;
+  justify-content: center;
+}
+.navigation ul {
+  display: flex;
+  gap: 2rem;
+}
+.link:link,
+.link:visited {
+  color: #212529;
+  opacity: 65%;
+  list-style: none;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding: 0.3rem 0;
+  transition: color 0.3s;
+}
+.link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+.link:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+  text-underline-offset: 4px;
+}
+.banner-container {
+  position: relative;
+  width: 100%; /* Full width of the container */
+  overflow: hidden; /* Hide overflow to only show the banner within the container */
+  /* background-color: #f1f1f1;  */
+  height: 50px; /* Height of the container */
+}
+.navH4 {
+  position: absolute;
+  white-space: nowrap; /* Prevent text from wrapping */
+  animation: moveBanner 10s linear infinite; /* Animation to move the banner */
+  font-size: 24px; /* Font size of the banner text */
+  line-height: 50px; /* Vertically center text within the container */
+}
+@keyframes moveBanner {
+  0% {
+    left: 100%; /* Start position (right off-screen) */
+  }
+  100% {
+    left: -100%; /* End position (left off-screen) */
+  }
+}

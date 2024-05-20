@@ -1,0 +1,20 @@
+.main-inscrip {
+  overflow: hidden;
+  height: 50rem;
+  width: 73rem;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  /* background-color: #e4f1f9; */
+  background-size: cover;
+}
+.inscrip {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 0.9rem;
+}
